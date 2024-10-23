@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение автомобилей Porsche</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhD7FOreNg0oF1j7c8SXM4Vv7RtWlmap38bljyR_MGVSJVfaBI8OsvOd-zB1jiCOxt-8&usqp=CAU');
+            background-size: cover; 
+            background-position: center; 
+            margin: 0;
+            padding: 80px 20px 20px; 
+            color: #333;        }
+        nav {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            background-color: rgba(70, 0, 20, 0.8); 
+            padding: 10px;
+            border-radius: 0 0 5px 5px; 
+            z-index: 1000; 
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center; 
+            margin: 20px 0; 
+            font-size: 36px; 
+            color: white; 
+        }
+        table {
+            width: 80%; 
+            border-collapse: collapse;
+            margin: 0 auto 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: rgba(70, 0, 20, 0.8);
+            color: white;
+        }
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+        img {
+            width: 100px; 
+            height: auto; 
+            margin: 0 10px; 
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1); 
+        }
+        blockquote {
+            font-size: 24px; 
+            font-style: italic; 
+            color: #555; 
+            padding: 20px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            position: relative; 
+            margin: 40px 0; 
+        }
+
+        .blockquote-decoration {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 40px;
+            background-image: linear-gradient(to right, #4CAF50, #8BC34A);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .blockquote-decoration-top,
+        .blockquote-decoration-bottom {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#comparison">Сравнение</a>
+    <a href="#foto">Фото</a>
+    <a href="#citata">Цитата</a>
+</nav>
+
+<h1>Сравнение автомобилей Porsche</h1> 
+
+<section id="comparison">
+    <table>
+        <thead>
+            <tr>
+                <th>Характеристика</th>
+                <th>Porsche 911</th>
+                <th>Porsche Cayenne</th>
+                <th>Porsche Macan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Тип двигателя</td>
+                <td>Дизельный</td>
+                <td>Бензиновый / Дизельный</td>
+                <td>Бензиновый</td>
+            </tr>
+            <tr>
+                <td>Расход топлива</td>
+                <td>20 л/100 км</td>
+                <td>10 л/100 км</td>
+                <td>8 л/100 км</td>
+            </tr>
+            <tr>
+                <td>Тип трансмиссии</td>
+                <td>Автоматическая</td>
+                <td>Автоматическая</td>
+                <td>Автоматическая</td>
+            </tr>
+            <tr>
+                <td>Количество передач</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Габариты</td>
+                <td>4333 x 1888 x 1999</td>
+                <td>4444 x 1999 x 1777</td>
+                <td>4555 x 1777 x 1888</td>
+            </tr>
+            <tr>
+                <td>Объем багажника</td>
+                <td>200 л</td>
+                <td>870 л</td>
+                <td>500 л</td>
+            </tr>
+            <tr>
+                <td>Системы безопасности</td>
+                <td>ABS, подушки безопасности</td>
+                <td>ABS, ESP, подушки безопасности</td>
+                <td>ABS, ESP, подушки безопасности</td>
+            </tr>
+            <tr>
+                <td>Рейтинг краш-тестов</td>
+                <td>5 звезд</td>
+                <td>4 звезды</td>
+                <td>5 звезд</td>
+            </tr>
+            <tr>
+                <td>Разгон до 100 км/ч</td>
+                <td>4 с</td>
+                <td>5 с</td>
+                <td>6 с</td>
+            </tr>
+            <tr>
+                <td>Максимальная скорость</td>
+                <td>538 км/ч</td>
+                <td>295 км/ч</td>
+                <td>332 км/ч</td>
+            </tr>
+            <tr>
+                <td>Начальная цена</td>
+                <td>5 000 000 руб.</td>
+                <td>5 500 000 руб.</td>
+                <td>8 000 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Wi-Fi и Bluetooth</td>
+                <td>Есть</td>
+                <td>Есть</td>
+                <td>Есть</td>
+            </tr>
+            <tr>
+                <td>Тормозная система</td>
+                <td>Дисковые тормоза</td>
+                <td>Дисковые тормоза</td>
+                <td>Дисковые тормоза</td>
+            </tr>
+            <tr>
+                <td>Системы предотвращения столкновений</td>
+                <td>Есть</td>
+                <td>Есть</td>
+                <td>Есть</td>
+            </tr>
+            <tr>
+                <td>Гарантийный срок</td>
+                <td>2 года</td>
+                <td>2 года</td>
+                <td>2 года</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="foto">
+    <figure>
+       <img src="C:\Users\Ксения\OneDrive\Рабочий стол\фото 2.9.jpg" style="width:29%;" alt="Porsche 911">
+        <img src="C:\Users\Ксения\OneDrive\Рабочий стол\фото 2.4.jpg" style="width:29%;" alt="Porsche Cayenne">
+        <img src="C:\Users\Ксения\OneDrive\Рабочий стол\фото 2.5.jpg" style="width:29%;" alt="Porsche Macan">
+    </figure>
+    <figcaption style="text-align:center">Автомобили Porsche</figcaption>
+</section>
+
+<section id="citata">
+    <blockquote>
+        <p>"Каждая поездка — это приключение. <br>Выберите автомобиль, который вдохновляет!"</p>
+        <cite>— Потеснова Ксюша</cite>
+    </blockquote>
+    <div class="blockquote-decoration">
+        <div class="blockquote-decoration-top"></div>
+        <div class="blockquote-decoration-bottom"></div>
+    </div>
+</section>
+</body>
+</html>
